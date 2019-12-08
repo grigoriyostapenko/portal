@@ -1,0 +1,98 @@
+.team {
+	padding: 50px 0;
+	background-color: $white;
+
+	&-header {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		margin-bottom: 70px;
+
+		.img-wrapper {
+			@include padding-hack(150px);
+			flex-shrink: 0;
+			width: 150px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-right: 30px;
+		}
+
+		&__text {
+			width: 100%;
+			max-width: 445px;
+		}
+
+		&__title {
+			color: $title-color;
+			font-size: 44px;
+			font-weight: bold;
+			text-transform: capitalize;
+		}
+
+		&__stitle {
+			color: $subt-color;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+	}
+	&-card {
+		width: 100%;
+		height: 100%;
+		padding: 30px 0;
+		background-color: $card-bg;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 5px;
+		justify-content: space-around;
+
+		&__img {
+			@include padding-hack(130px);
+			flex-shrink: 0;
+			width: 130px;
+			border-radius: 50px;
+			overflow: hidden;
+			border: 3px solid $white;
+			margin-bottom: 30px;
+		}
+
+		&__title {
+			font-size: 24px;
+			color: $title-color;
+			font-weight: 700;
+			text-transform: capitalize;
+			margin-bottom: 15px;
+		}
+
+		&__subt {
+			font-size: 16px;
+			font-weight: 400;
+			color: $title-color;
+			margin-bottom: 40px;
+			text-transform: capitalize;
+		}
+
+		&__social {
+			width: 100%;
+			background-color: $white;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 50px;
+
+			&-item {
+				@include square(22px);
+				justify-content: center;
+				align-items: center;
+			}
+			&-link {
+				color: $card-icons;
+
+				&:hover {
+					color: $card-icons;
+					opacity: .8;
+				}
+			}
+		}
+	}
+}
